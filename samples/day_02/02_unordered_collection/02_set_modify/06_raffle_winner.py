@@ -1,0 +1,1 @@
+# From the previous exercise, pick a random attendee and print their name
