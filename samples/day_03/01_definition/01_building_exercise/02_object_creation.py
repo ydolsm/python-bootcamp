@@ -1,4 +1,5 @@
 class Employee:
-    pass
+    """Class representation for employee data"""
+
 
 employee1 = Employee()

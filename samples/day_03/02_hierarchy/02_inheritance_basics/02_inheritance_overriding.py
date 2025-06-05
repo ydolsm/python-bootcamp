@@ -1,13 +1,26 @@
-class Parent:
-    def sing(self):
-        print("Singing: When I met You")
+class Person:
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
 
-class Child(Parent):
-    def sing(self):
-        print(f"Singing: Let it Go")
+    def introduction(self):
+        return f"I'm {self.first_name} {self.last_name}!"
 
-parent = Parent()
-parent.sing()
+    def sleep(self):
+        print("I will sleep for eight hours")
 
-child = Child()
-child.sing()
+
+class Student(Person):
+    def __init__(self, first_name, last_name, level):
+        super().__init__(first_name, last_name)
+        self.level = level
+
+    def introduction(self):
+        return super().introduction() + f" I'm a {self.level} student."
+
+    def sleep(self):
+        print("I will sleep for six hours")
+
+
+student = Student("Kafka", "Shore", "1st year")
+print(student.introduction())
