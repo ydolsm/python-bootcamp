@@ -1,3 +1,3 @@
-items = ['a', 'b', 'c']
-for index, items in enumerate(items):
-	print(index, items)
+items = ["a", "b", "c"]
+for index, item in enumerate(items):
+    print(index, item)
