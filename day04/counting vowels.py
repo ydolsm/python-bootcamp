@@ -9,6 +9,7 @@ def count_vowels():
         vowels = ["a", "e", "i", "o", "u"]
         if letter in vowels:
             letter_count += 1
+        #else:
 
     print (f"Vowel count: {letter_count}")
 
